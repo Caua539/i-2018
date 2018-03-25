@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Atividade00 {
 	public static void main (String[] args) throws IOException {
-		int inteiro = 2;
+		int inteiro = 256;
 		FileOutputStream fos = new FileOutputStream(args[0]);
 		DataOutputStream dos = new DataOutputStream(fos);
 		dos.writeInt(inteiro);
