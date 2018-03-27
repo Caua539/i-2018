@@ -1,30 +1,33 @@
 package aula01;
 
+import java.io.DataInputStream;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class Atividade02 {
 	public static void main (String[] args) throws IOException {
-		Path arquivo = Paths.get(args[0]);
-		ByteBuffer[] buffer = new ByteBuffer[4];
-		for (int i=0; i<4; i++) {
-			buffer[i] = ByteBuffer.allocate(1);
-		}
-		FileChannel fc = FileChannel.open(arquivo);
-		fc.read(buffer, 0, 2);
-		fc.position(fc.size() - 2);
-		fc.read(buffer, 2, 2);
-		fc.close();
-		String ref = "FFD8FFD9";
-		String file = "";
-		for (int i =0; i<4; i++) {
-			file += String.format("%02X", buffer[i].get(0));
-		}
-		if (file.equals(ref)) {
-			System.out.println("É um JPEG!");
+		
+		File arquivo = new File(args[0]);
+		long size = arquivo.length();
+		
+		FileInputStream fis = new FileInputStream(args[0]);
+		DataInputStream dis = new DataInputStream(fis);
+		
+		byte ff = dis.readByte();
+		byte d8 = dis.readByte();
+		dis.skip(size - 4);
+		byte ff2 = dis.readByte();
+		byte d9 = dis.readByte();
+		
+		boolean first = ff == (byte)0xFF;
+		boolean second = d8 == (byte)0xD8;
+		boolean third = ff2 == (byte)0xFF;
+		boolean fourth = d9 == (byte)0xD9;
+		
+		if (first && second && third && fourth) {
+			System.out.println("É um JPEG");
+			
 		}
 		
 		
