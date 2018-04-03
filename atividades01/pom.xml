@@ -23,31 +23,28 @@
          mvn javancss:report (gera relatório)
     -->
 
-    <groupId>com.github.kyriosdata</groupId>
-    <artifactId>exemplo</artifactId>
+    <groupId>br.ufg.inf.es.integracao</groupId>
+    <artifactId>topico01</artifactId>
     <packaging>jar</packaging>
     <version>1.0.0</version>
 
-    <name>com.github.kyriosdata:exemplo</name>
+    <name>br.ufg.inf.es.integracao:topico01</name>
 
-    <description>
-        Projeto de referência (exemplo) inicial de desenvolvimento em Java com uso de JUnit.
-    </description>
 
-    <url>https://github.com/kyriosdata/exemplo</url>
+    <url>https://github.com/Caua539/i-2018</url>
 
     <organization>
-        <name>Instituto de Informática (UFG) - Fábrica de Software</name>
+        <name>Instituto de Informática (UFG)</name>
         <url>http://www.inf.ufg.br</url>
     </organization>
 
-    <inceptionYear>2016</inceptionYear>
+    <inceptionYear>2018</inceptionYear>
 
     <licenses>
         <license>
             <name>Creative Commons Attribution 4.0 International (CC BY 4.0)</name>
             <comments>A atribuição deve conter, explicitamente, a seguinte linha:
-                Copyright (c) 2016. Fábrica de Software - Instituto de Informática (UFG)
+                Copyright (c) 2018. Cauã Pessoa
             </comments>
             <url>https://creativecommons.org/licenses/by/4.0/</url>
         </license>
@@ -55,18 +52,18 @@
 
     <developers>
         <developer>
-            <id>kyriosdata</id>
-            <name>Fábio Nogueira de Lucena</name>
-            <email>fabio@inf.ufg.br</email>
+            <id>caua539</id>
+            <name>Cauã Martins Pessoa</name>
+            <email>caua539@live.com</email>
             <organization>Instituto de Informática (UFG)</organization>
             <organizationUrl>http://www.inf.ufg.br</organizationUrl>
         </developer>
     </developers>
 
     <scm>
-        <connection>scm:git:https://github.com/kyriosdata/exemplo.git</connection>
-        <developerConnection>scm:git:https://github.com/kyriosdata/exemplo.git</developerConnection>
-        <url>https://github.com/kyriosdata/exemplo</url>
+        <connection>scm:git:https://github.com/Caua539/i-2018.git</connection>
+        <developerConnection>scm:git:https://github.com/Caua539/i-2018.git</developerConnection>
+        <url>https://github.com/Caua539/i-2018</url>
     </scm>
 
     <properties>
@@ -106,7 +103,7 @@
     <build>
 
         <!-- Define o nome do arquivo a ser gerado (.jar é acrescentada) -->
-        <finalName>Exemplo</finalName>
+        <finalName>Atividades01</finalName>
 
         <plugins>
 
@@ -148,10 +145,10 @@
                 <version>1.1.10</version>
                 <configuration>
                     <targetClasses>
-                        <param>com.github.kyriosdata.exemplo.Calendario</param>
+                        <param>br.ufg.inf.es.integracao.topico01.Atividade01</param>
                     </targetClasses>
                     <targetTests>
-                        <param>com.github.kyriosdata.exemplo.*</param>
+                        <param>br.ufg.inf.es.integracao.topico01.*</param>
                     </targetTests>
                 </configuration>
             </plugin>
@@ -202,7 +199,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>jars/</classpathPrefix>
-                            <mainClass>com.github.kyriosdata.exemplo.ProgramaCalendario</mainClass>
+                            <mainClass>br.ufg.inf.es.integracao.topico01.Atividade01</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -313,4 +310,5 @@
         </profile>
     </profiles>
 
+    <description>Atividades do tópico 01 da disciplina Integração de Aplicações</description>
 </project>
