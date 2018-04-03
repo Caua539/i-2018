@@ -1,14 +1,8 @@
 /*******************************************************************************
- * Copyright (c) 2018 Cauã Pessoa
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *     Cauã Pessoa
+ * Copyright (c) 2018.
+ * Cauã Pessoa
+ * Creative Commons Attribution 4.0 International License.
  *******************************************************************************/
-
 package br.ufg.inf.es.integracao.topico01;
 
 import java.io.DataInputStream;
@@ -17,12 +11,19 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /**
- * Programa que recebe o nome de um arquivo e exibe os 4 primeiros bytes em formato hexadecimal
+ * Programa que recebe o nome de um arquivo e exibe os 4 
+ * primeiros bytes em formato hexadecimal
  * @author caua539
  *
  */
 public class Atividade01 {
-	
+
+	/**
+	 * Chama método passando nome do arquivo para parâmetro e 
+	 * exibe valor retornado como hexadecimal.
+	 * 
+	 * @param args nome do arquivo.
+	 */
 	public static void main (String[] args) {
 		int valor;
 		try {
@@ -34,6 +35,13 @@ public class Atividade01 {
 		}		
 	}
 
+	/**
+	 * Lê 4 primeiros bytes do arquivo como inteiro 32 bits
+	 * 
+	 * @param arquivo o arquivo recebido como argumento
+	 * 
+	 * @return o valor lido pelo arquivo
+	 */
 	public static int obtemQuatroPrimeirosBytesComoInteiro(String arquivo) {
 		FileInputStream fis;
 		DataInputStream dis;
