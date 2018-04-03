@@ -13,17 +13,22 @@ package br.ufg.inf.es.integracao.topico01;
 
 import java.io.DataInputStream;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class Atividade01 {
 	public static void main (String[] args) throws IOException {
-		FileInputStream fis = new FileInputStream(args[0]);
+		int valor = obtemQuatroPrimeirosBytesComoInteiro(args[0]);		
+		System.out.println(Integer.toHexString(valor));
+	}
+
+	public static int obtemQuatroPrimeirosBytesComoInteiro(String arquivo) throws FileNotFoundException, IOException {
+		FileInputStream fis = new FileInputStream(arquivo);
 		DataInputStream dis = new DataInputStream(fis);
 		
 		int valor = dis.readInt();
 		dis.close();
-		System.out.println(Integer.toHexString(valor));
 		
+		return valor;
 	}
-
 }
