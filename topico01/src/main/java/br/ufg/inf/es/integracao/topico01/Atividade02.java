@@ -24,6 +24,7 @@ public class Atividade02 {
 		dis.skip(size - 4);
 		byte ff2 = dis.readByte();
 		byte d9 = dis.readByte();
+		dis.close();
 		
 		boolean first = ff == (byte)0xFF;
 		boolean second = d8 == (byte)0xD8;
