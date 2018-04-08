@@ -20,7 +20,6 @@ public class Atividade06 {
 				System.out.println(text);
 			}
 		} catch (EOFException eof) {
-			System.out.println("\n FIM.");
 			dis.close();
 		}
 
