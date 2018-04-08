@@ -11,8 +11,20 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+/**
+ * Programa que exibe o conteúdo de um arquivo texto
+ * na saída padrão
+ * @author caua539
+ *
+ */
 public class Atividade03 {
 
+	/**
+	 * O método recebe como argumento o nome de um arquivo
+	 * e lê suas linhas uma a uma usando formato UTF-8
+	 * @param args
+	 * @throws IOException
+	 */
 	public static void main(String[] args) throws IOException {
 		Path arquivo = Paths.get(args[0]);
 		Charset uft8 = Charset.forName("UTF-8");

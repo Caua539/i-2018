@@ -10,7 +10,23 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
+/**
+ * Programa que recebe o nome de um arquivo como parâmetro
+ * e verifica se aquele arquivo é um arquivo de extensão
+ * JPEG.
+ * @author caua539
+ *
+ */
 public class Atividade02 {
+	
+	/**
+	 * O método recebe um arquivo como argumento, lê os
+	 * 2 primeiros e os 2 últimos bytes desse arquivo e 
+	 * os compara com valores pré-determinados para 
+	 * averiguar se o arquivo é um JPEG
+	 * @param args
+	 * @throws IOException
+	 */
 	public static void main (String[] args) throws IOException {
 		
 		File arquivo = new File(args[0]);
