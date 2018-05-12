@@ -1,0 +1,38 @@
+package br.ufg.inf.es.integracao.topico03;
+
+public class Sapato extends Calçado {
+	
+	private int red = 0;
+	private int green = 0;
+	private int blue = 0;
+	
+	public int getRed() {
+		return red;
+	}
+	public void setRed(int red) {
+		this.red = red;
+	}
+	public int getGreen() {
+		return green;
+	}
+	public void setGreen(int green) {
+		this.green = green;
+	}
+	public int getBlue() {
+		return blue;
+	}
+	public void setBlue(int blue) {
+		this.blue = blue;
+	}
+	
+	@Override
+	public String toString() {
+		return "Sapato [marca=" + marca + ", preço=" + preço +", red=" + red + ", green=" + green + ", blue=" + blue + "]";
+	}
+	
+	
+
+	
+	
+
+}

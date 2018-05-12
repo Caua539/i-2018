@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calçados>
+    <tenis>
+        <marca>nike</marca>
+        <preço>2.99</preço>
+        <esporte>futebol</esporte>
+    </tenis>
+    <sapato>
+        <marca>nemsei</marca>
+        <preço>3.99</preço>
+        <red>45</red>
+        <green>57</green>
+        <blue>200</blue>
+    </sapato>
+</calçados>
