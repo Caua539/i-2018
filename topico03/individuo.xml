@@ -1,0 +1,33 @@
+<Individuo>
+  <Nome>
+    <nome>Joao</nome>
+    <sobrenome>Silva</sobrenome>
+    <sufixo>Filho</sufixo>
+    <titulo>Dr.</titulo>
+    <nomepreferido>true</nomepreferido>
+  </Nome>
+  <Endereço>
+    <bairro>Bairro</bairro>
+    <distrito>62</distrito>
+    <municipio>Goiania</municipio>
+    <estado>Goias</estado>
+    <cep>74001001</cep>
+    <caixapostal>1</caixapostal>
+    <pais>1</pais>
+    <datainicial>
+      <data>2000/5/15</data>
+      <acuraciadia>alta</acuraciadia>
+      <acuraciames>baixa</acuraciames>
+      <acuraciaano>baixa</acuraciaano>
+    </datainicial>
+  </Endereço>
+  <Identificador>
+    <designacao>1</designacao>
+    <area>2</area>
+    <emissor>Estado de Goias</emissor>
+    <tipo>3</tipo>
+    <secao>123</secao>
+    <zona>333</zona>
+    <emissao>1995/3/20</emissao>
+  </Identificador>
+</Individuo>

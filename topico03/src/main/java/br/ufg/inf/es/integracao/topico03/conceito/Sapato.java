@@ -1,4 +1,4 @@
-package br.ufg.inf.es.integracao.topico03;
+package br.ufg.inf.es.integracao.topico03.conceito;
 
 public class Sapato extends Calçado {
 	

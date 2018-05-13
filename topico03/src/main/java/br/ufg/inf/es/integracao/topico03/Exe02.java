@@ -8,7 +8,12 @@ import javax.xml.stream.*;
 
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
+import br.ufg.inf.es.integracao.topico03.conceito.Calçado;
+import br.ufg.inf.es.integracao.topico03.conceito.Sapato;
+import br.ufg.inf.es.integracao.topico03.conceito.Tenis;
+
 public class Exe02 {
+
 
 	public static void main(String[] args) throws IOException, XMLStreamException {
 		
@@ -17,7 +22,7 @@ public class Exe02 {
 		XMLStreamReader reader = factory.createXMLStreamReader(fis);
 		XmlMapper mapper = new XmlMapper();
 		
-		ArrayList<Calçado> lista = new ArrayList();
+		ArrayList<Calçado> lista = new ArrayList<Calçado>();
 
 		int evento = reader.next();
 		while (evento != XMLStreamConstants.END_DOCUMENT) {

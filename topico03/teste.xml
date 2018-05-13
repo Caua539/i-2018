@@ -1,15 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<calçados>
-    <tenis>
-        <marca>nike</marca>
-        <preço>2.99</preço>
-        <esporte>futebol</esporte>
-    </tenis>
-    <sapato>
-        <marca>nemsei</marca>
-        <preço>3.99</preço>
-        <red>45</red>
-        <green>57</green>
-        <blue>200</blue>
-    </sapato>
-</calçados>
+<Turma>
+  <Estudante>
+    <Endereço>
+      <logradouro>Primeira</logradouro>
+      <numero>1</numero>
+      <complemento>Apto 100</complemento>
+      <cep>74001</cep>
+    </Endereço>
+  </Estudante>
+  <Estudante>
+    <Endereço>
+      <logradouro>Segunda</logradouro>
+      <numero>2</numero>
+      <complemento>Apto 200</complemento>
+      <cep>74002</cep>
+    </Endereço>
+  </Estudante>
+  <Estudante>
+    <Endereço>
+      <logradouro>Terceira</logradouro>
+      <numero>3</numero>
+      <complemento>Apto 300</complemento>
+      <cep>74003</cep>
+    </Endereço>
+  </Estudante>
+  <Estudante>
+    <Endereço>
+      <logradouro>Quarta</logradouro>
+      <numero>4</numero>
+      <complemento>Apto 400</complemento>
+      <cep>74004</cep>
+    </Endereço>
+  </Estudante>
+</Turma>
